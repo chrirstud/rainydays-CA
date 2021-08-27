@@ -154,6 +154,7 @@ nav a.current-page {
 
 /*---------- Footer ----------*/
 footer {
+  min-height: 50px;
   margin: 0 auto;
 }
 
@@ -168,6 +169,14 @@ footer {
 }
 
 /*---------- Main ----------*/
+
+main {
+  background-color: #f8f8f8;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  padding: 25px;
+}
 
 .main-wrapper {
   max-width: 100%;
