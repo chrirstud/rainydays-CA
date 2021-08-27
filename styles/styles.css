@@ -1,0 +1,309 @@
+/* details
+
+-------------------------*/
+
+/* Color Palette
+Green-ish:
+RGB: 10-54-65
+HEX: #0A3641
+-
+White-ish:
+RGB: 248-248-248
+HEX: #F8F8F8
+-
+Purple-ish:
+RGB: 140-35-72
+HEX: #8C2348
+-
+Grey-ish:
+RGB: 26-26-26
+HEX: #1A1A1A
+-
+Yellow-ish:
+RGB: 140-130-14
+HEX: #8C820E
+-------------------------*/
+
+/*---------- Border Box Fix ----------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*---------- Global styles ----------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+p {
+  color: #1a1a1a;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/*---------- Header ----------*/
+.header-wrapper {
+  background-color: #f8f8f8;
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(10, 54, 65, 1);
+  height: 150px;
+  min-width: 100%;
+  position: fixed;
+}
+
+.header-top img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.header-bottom {
+  background-color: #0a3641;
+  overflow: hidden;
+  height: 40px;
+}
+
+ul.header-icons {
+  list-style-type: none;
+  padding: 5px;
+  float: right;
+  margin: 0 auto;
+}
+
+li.header-icons {
+  float: left;
+  padding: 5px;
+  margin: 0;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+nav ul {
+  background-color: #0a3641;
+  list-style-type: none;
+  padding: 0px;
+  float: left;
+  margin-top: 40px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(10, 54, 65, 1);
+  position: absolute;
+}
+
+nav li {
+  float: left;
+  margin: 0px auto;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+nav a.current-page {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  border-bottom-right-radius: 10px;
+  font-weight: bold;
+}
+
+.hamburger-label {
+  float: left;
+  color: #f8f8f8;
+  padding: 3px 3px 3px 6px;
+  font-size: 1.5em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+/*---------- Footer ----------*/
+footer {
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  background-color: #0a3641;
+  padding: 25px;
+  color: #f8f8f8;
+  text-align: center;
+  float: left;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/*---------- Main ----------*/
+.main-wrapper {
+  max-width: 100%;
+  padding-top: 150px;
+  display: block;
+  max-height: 100%;
+}
+
+.brandphoto {
+  float: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.brandadjective {
+  float: left;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.brandphoto img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  float: left;
+}
+
+.brandadjective img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  float: left;
+  padding: 10px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 601px) and (max-width: 1279px) {
+  body {
+    background-image: url(/images/raindrops.jpeg);
+    background-size: 100% 100%;
+  }
+  .hamburger-label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0px;
+  }
+
+  .main-wrapper {
+    background-color: #f8f8f8;
+    float: left;
+    margin: 0 auto;
+  }
+
+  .brandphoto {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .brandadjective {
+    float: left;
+    max-width: 100%;
+    margin: 10%;
+    align-content: center;
+  }
+
+  .brandphoto img {
+    max-width: 33.333%;
+    margin: 0 auto;
+    float: left;
+  }
+
+  .brandadjective img {
+    max-width: 33%;
+    max-height: 100%;
+    margin: 0 auto;
+    float: left;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1280px) {
+  body {
+    background-image: url(/images/raindrops.jpeg);
+    background-size: 100% 100%;
+
+    background-attachment: fixed;
+    margin: 0 auto;
+  }
+
+  header,
+  main,
+  footer {
+    width: 1280px;
+    float: center;
+    margin: 0 auto;
+  }
+
+  .header-wrapper {
+    min-width: 1280px;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0px;
+  }
+
+  .main-wrapper {
+    background-color: #f8f8f8;
+    float: left;
+  }
+
+  .brandadjective {
+    margin: 10%;
+  }
+
+  .brandphoto img {
+    max-width: 33.333%;
+  }
+
+  .brandadjective img {
+    max-width: 33.333%;
+  }
+}
