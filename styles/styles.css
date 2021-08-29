@@ -310,20 +310,22 @@ a.checkout-button:hover {
     display: block;
   }
 
+  img.list-img {
+    height: 200px;
+  }
+
   h1 {
-    font-size: 32px;
+    font-size: 32pt;
     font-weight: bold;
   }
-  
+
   h2 {
-    font-size: 22px;
+    font-size: 22pt;
   }
-  
+
   p {
-    font-size: 12px;
+    font-size: 12pt;
   }
-
-
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -350,7 +352,7 @@ a.checkout-button:hover {
     float: left;
     margin: 0 auto;
   }
-
+}
 
 /* Media Query for Large screens */
 @media (min-width: 1280px) {
