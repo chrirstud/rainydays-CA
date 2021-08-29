@@ -39,13 +39,13 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  height: 100%;
 }
 
 h1,
 h2,
 p {
   color: #1a1a1a;
+  margin-top: 0;
 }
 
 h1 {
@@ -154,35 +154,151 @@ nav a.current-page {
 
 /*---------- Footer ----------*/
 footer {
-  min-height: 50px;
+  min-height: 20px;
   margin: 0 auto;
 }
 
 .footer-wrapper {
   background-color: #0a3641;
-  padding: 25px;
+  padding: 10px;
   color: #f8f8f8;
   text-align: center;
-  float: left;
-  min-width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
 }
 
 /*---------- Main ----------*/
 
 main {
-  background-color: #f8f8f8;
-  width: 100%;
-  min-height: 100%;
-  height: 100%;
-  padding: 25px;
+  display: flex;
 }
 
 .main-wrapper {
-  max-width: 100%;
-  padding-top: 150px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 100%;
+  padding: 175px 50px 100px 50px;
+  margin-right: 50px;
+}
+
+/*---------- Rainydays | About ----------*/
+.about-text {
+  max-width: 750px;
+  min-width: 200px;
+  padding: 0px 75px 0px 75px;
+}
+
+/*---------- Rainydays | Contact ----------*/
+.contact-content {
+  padding: 0px 75px 0px 75px;
+}
+
+/*---------- Rainydays | Collection ----------*/
+.jacket-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+  grid-column-gap: 1px;
+  box-shadow: #0a3641 1px 1px 20px;
+}
+
+img.list-img {
+  height: 300px;
+}
+
+a.view-button {
+  font-size: 15pt;
+  border-radius: 10px;
+  background-color: #8c2348;
+  color: #f8f8f8;
+  padding: 10px;
+  text-decoration: none;
   display: block;
-  max-height: 100%;
+  text-align: center;
+  width: 150px;
+}
+
+a.view-button:hover {
+  background-color: #f8f8f8;
+  color: #8c2348;
+  font-weight: bold;
+}
+
+/*---------- Rainydays | Jacket View----------*/
+img.jacket-view {
+  height: 600px;
+  padding: 25px;
+}
+
+.product-view {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  text-align: left;
+  grid-column-gap: 1px;
+}
+
+/*---------- Rainydays | Checkout ----------*/
+.cart-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.cart {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  text-align: left;
+  grid-column-gap: 1px;
+}
+
+.customer-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+form {
+  max-width: 20px;
+}
+input {
+  margin: 10px;
+  padding: 10px;
+}
+
+/*
+img.cart-img {
+  height: 300px;
+}*/
+
+a.checkout-button {
+  font-size: 15pt;
+  border-radius: 10px;
+  background-color: #0a3641;
+  color: #f8f8f8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 150px;
+}
+
+a.checkout-button:hover {
+  background-color: #f8f8f8;
+  color: #0a3641;
+  font-weight: bold;
 }
 
 /* GAMMELT------------------------------------------------
@@ -214,13 +330,25 @@ main {
 }-----------------------------------------------------GAMMELT*/
 
 /* Media Query for Mobile Devices */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+  .jacket-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product {
+    box-shadow: none;
+  }
+
+  .product-view {
+    display: block;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 601px) and (max-width: 1279px) {
   body {
-    background-image: url(/images/raindrops_288kB.jpg);
+    background-image: none;
+    background-color: none;
     background-size: 100% 100%;
   }
   .hamburger-label {
@@ -273,7 +401,7 @@ main {
 /* Media Query for Large screens */
 @media (min-width: 1280px) {
   body {
-    background-image: url(/images/raindrops_288kB.jpg);
+    background-image: url(/images/background_img/raindrops_288kB.jpg);
     background-size: 100% 100%;
 
     background-attachment: fixed;
