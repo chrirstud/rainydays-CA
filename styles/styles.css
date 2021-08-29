@@ -278,11 +278,6 @@ input {
   padding: 10px;
 }
 
-/*
-img.cart-img {
-  height: 300px;
-}*/
-
 a.checkout-button {
   font-size: 15pt;
   border-radius: 10px;
@@ -301,34 +296,6 @@ a.checkout-button:hover {
   font-weight: bold;
 }
 
-/* GAMMELT------------------------------------------------
-.brandphoto {
-  float: left;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.brandadjective {
-  float: left;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.brandphoto img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  float: left;
-}
-
-.brandadjective img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 auto;
-  float: left;
-  padding: 10px;
-}-----------------------------------------------------GAMMELT*/
-
 /* Media Query for Mobile Devices */
 @media (max-width: 1000px) {
   .jacket-list {
@@ -342,6 +309,21 @@ a.checkout-button:hover {
   .product-view {
     display: block;
   }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+  
+  p {
+    font-size: 12px;
+  }
+
+
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -369,34 +351,6 @@ a.checkout-button:hover {
     margin: 0 auto;
   }
 
-  /* GAMMELT------------------------------------------------
-  .brandphoto {
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .brandadjective {
-    float: left;
-    max-width: 100%;
-    margin: 10%;
-    align-content: center;
-  }
-
-  .brandphoto img {
-    max-width: 33.333%;
-    margin: 0 auto;
-    float: left;
-  }
-
-  .brandadjective img {
-    max-width: 33%;
-    max-height: 100%;
-    margin: 0 auto;
-    float: left;
-    padding: 0px 10px 0px 10px;
-  }-----------------------------------------------------GAMMELT*/
-}
 
 /* Media Query for Large screens */
 @media (min-width: 1280px) {
@@ -436,17 +390,4 @@ a.checkout-button:hover {
     background-color: #f8f8f8;
     float: left;
   }
-
-  /* GAMMELT------------------------------------------------
-  .brandadjective {
-    margin: 10%;
-  }
-
-  .brandphoto img {
-    max-width: 33.333%;
-  }
-
-  .brandadjective img {
-    max-width: 33.333%;
-  }-----------------------------------------------------GAMMELT*/
 }
