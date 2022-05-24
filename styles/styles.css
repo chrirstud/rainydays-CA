@@ -204,11 +204,20 @@ form#contactForm {
   max-width: 75%;
 }
 
-input {
+textarea {
+  max-width: 75%;
+  min-width: 75%;
+  margin: 10px;
   font-size: 15px;
   border-radius: 5px;
   border: 1px solid #333;
-  width: 100%;
+}
+
+input {
+  min-width: 75%;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #333;
 }
 
 input#message {
@@ -293,7 +302,7 @@ a.view-button:hover {
 
 /*---------- Rainydays | Jacket View----------*/
 img.jacket-view {
-  height: 600px;
+  max-height: 600px;
   padding: 25px;
 }
 
@@ -306,7 +315,6 @@ img.jacket-view {
 
 /*---------- Rainydays | Checkout ----------*/
 .cart-list {
-  max-width: ;
   margin: 5% 0 10% 0;
 }
 
@@ -421,6 +429,7 @@ a.checkout-button:hover {
     float: left;
     margin: 0 auto;
   }
+  
 }
 
 /* Media Query for Large screens */
