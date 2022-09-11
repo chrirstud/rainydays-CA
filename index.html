@@ -9,17 +9,21 @@
     <title>Rainydays | Home</title>
 
     <!-- Hotjar Tracking Code for https://boring-edison-e256e4.netlify.app/ -->
-      <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2982067,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-      </script>
-
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2982067, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <!-- // Header // -->
@@ -28,8 +32,8 @@
         <div class="header-top">
           <a href="index.html">
             <img
-            src="./images/logos/rainydays_logo_h90.png"
-            alt="rainydays_logo_h90"
+              src="./images/logos/rainydays_logo_h90.png"
+              alt="rainydays_logo_h90"
             />
           </a>
         </div>
@@ -66,16 +70,20 @@
     <main>
       <div class="main-wrapper">
         <h1>Home</h1>
-        <h3>
+        <p>
           Experience our comfortable and durable jackets to suit ALL weathers.
           <br />
           The quality of your adventures will get a boost you will never forget!
-        </h3>
+        </p>
+        <h3>Have a look at our featured products!</h3>
+        <div class="featured"></div>
       </div>
     </main>
     <!-- // Footer // -->
     <footer>
       <div class="footer-wrapper">&copy; 2021 Rainydays, Inc</div>
     </footer>
+
+    <script src="js/featured.js"></script>
   </body>
 </html>

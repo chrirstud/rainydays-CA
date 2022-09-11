@@ -186,6 +186,23 @@ main {
   margin-right: 50px;
 }
 
+/*---------- Rainydays | Home ----------*/
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 25px;
+}
+
+.featured p {
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.featured-prod {
+  border-bottom: solid 1px#0a3641;
+}
+
 /*---------- Rainydays | About ----------*/
 .about-text {
   max-width: 750px;
@@ -251,36 +268,12 @@ button:hover {
 }
 
 .validationPass {
-  display:none;
+  display: none;
   color: green;
   font-style: oblique;
 }
 
 /*---------- Rainydays | Collection ----------*/
-.jacket-list {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 50px;
-}
-
-.product {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  text-align: left;
-  grid-column-gap: 10px;
-  box-shadow: #0a3641 1px 1px 2px;
-}
-
-.jacket-details {
-  padding: 25px;
-  margin: 0 auto;
-}
-
-img.list-img {
-  height: 300px;
-}
 
 a.view-button {
   font-size: 15px;
@@ -291,13 +284,40 @@ a.view-button {
   text-decoration: none;
   display: block;
   text-align: center;
-  width: 150px;
+  width: 100px;
 }
 
 a.view-button:hover {
   background-color: #f8f8f8;
   color: #8c2348;
   font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product {
+  display: block;
+  box-shadow: #0a3641 1px 1px 1px;
+  margin: 25px;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+img.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-description {
+  display: block;
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
 }
 
 /*---------- Rainydays | Jacket View----------*/
@@ -322,7 +342,10 @@ ul#cartList {
   list-style-type: none;
 }
 
-li.cartItem, .cartTotal, .cartShipping, .cartTopay {
+li.cartItem,
+.cartTotal,
+.cartShipping,
+.cartTopay {
   margin: 0 auto;
   min-height: 10%;
 }
@@ -331,7 +354,7 @@ li.cartTotal {
   border-top: double;
 }
 
-li.cartTopay{
+li.cartTopay {
   font-weight: bold;
   border-bottom: double;
 }
@@ -341,7 +364,7 @@ li.cartTopay{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-form#checkoutForm{
+form#checkoutForm {
   max-width: 75%;
 }
 input {
@@ -402,6 +425,13 @@ a.checkout-button:hover {
     margin-top: 25px;
   }
 
+  .featured {
+    display: block;
+  }
+
+  .featured p {
+    padding-right: 0px;
+  }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -429,7 +459,15 @@ a.checkout-button:hover {
     float: left;
     margin: 0 auto;
   }
-  
+
+  a.view-button {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .featured {
+    display: block;
+  }
 }
 
 /* Media Query for Large screens */
@@ -445,7 +483,7 @@ a.checkout-button:hover {
   header,
   main,
   footer {
-    width: 1280px;;
+    width: 1280px;
     float: center;
     margin: 0 auto;
   }
@@ -469,5 +507,31 @@ a.checkout-button:hover {
   .main-wrapper {
     background-color: #f8f8f8;
     float: left;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  a.view-button {
+    font-size: 10px;
+    width: 75px;
+  }
+
+  .products {
+    display: block;
   }
 }

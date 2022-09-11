@@ -9,17 +9,21 @@
     <title>Rainydays | Collection</title>
 
     <!-- Hotjar Tracking Code for https://boring-edison-e256e4.netlify.app/ -->
-      <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2982067,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-      </script>
-      
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2982067, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <!-- // Header // -->
@@ -28,8 +32,8 @@
         <div class="header-top">
           <a href="/index.html">
             <img
-            src="/images/logos/rainydays_logo_h90.png"
-            alt="rainydays_logo_h90"
+              src="/images/logos/rainydays_logo_h90.png"
+              alt="rainydays_logo_h90"
             />
           </a>
         </div>
@@ -70,65 +74,21 @@
     <main>
       <div class="main-wrapper">
         <h1>Collection</h1>
-        <section class="jacket-list">
-          <div class="product">
-              <img
-                class="list-img"
-                src="/images/jackets/brown male.jpg"
-                alt="brown_male"
-              />
-            <div class="jacket-details">
-              <h2>Rainydays Brown</h2>
-              <p>Male</p>
-              <h3>$69,99</h3>
-              <a href="/pages/jacket.html" class="view-button">View/Buy</a>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="list-img"
-              src="/images/jackets/red male.jpg"
-              alt="red_male"
-            />
-            <div class="jacket-details">
-              <h2>Rainydays Red</h2>
-              <p>Male</p>
-              <h3>$69,99</h3>
-              <a href="/pages/jacket.html" class="view-button">View/Buy</a>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="list-img"
-              src="/images/jackets/yellow female.jpg"
-              alt="yellow_female"
-            />
-            <div class="jacket-details">
-              <h2>Rainydays Yellow</h2>
-              <p>Female</p>
-              <h3>$69,99</h3>
-              <a href="/pages/jacket.html" class="view-button">View/Buy</a>
-            </div>
-          </div>
-          <div class="product">
-            <img
-              class="list-img"
-              src="/images/jackets/yellow male.jpg"
-              alt="yellow_male"
-            />
-            <div class="jacket-details">
-              <h2>Rainydays Yellow</h2>
-              <p>Male</p>
-              <h3>$69,99</h3>
-              <a href="/pages/jacket.html" class="view-button">View/Buy</a>
-            </div>
-          </div>
-        </section>
+
+        <div class="search">
+          <input type="search" id="search-input" />
+          <button class="search-button">
+            <img src="/images/icons/search_path.png" alt="search_button" />
+          </button>
+        </div>
+
+        <div class="products"></div>
       </div>
     </main>
     <!-- // Footer // -->
     <footer>
       <div class="footer-wrapper">&copy; 2021 Rainydays, Inc</div>
     </footer>
+    <script src="/js/products-api.js"></script>
   </body>
 </html>
