@@ -1,25 +1,27 @@
-# rainydays-CA
+# Rainydays
 
 ![image](/images/rainydays_homepage.jpg)
 
-A simple overview of the use/purpose of the project.
+A webshop where you can buy jackets for all kinds of weather and conditions.
+
+- [Live demo on Netlify](www.linkedin.com)
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+A webshop where you can buy jackets for all kinds of weather and conditions. Front-end uses Wordpress REST API to display products from back-end Wordpress that uses WooCommerce plug-in.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- Home - page that lists featured items
+- Collection - lists all products from WordPress REST API
+- Contact - information and form
+- About - simple about-page
+- Visual checkout process
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- Javascript
+- WordPress
 
 ## Getting Started
 
@@ -30,40 +32,20 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
+git clone git@github.com:chrirstud/rainydays-CA.git
 ```
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
+Upload to webserver
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
-
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[LinkedIn](www.linkedin.com)
 
 ## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 ## Acknowledgments
 
