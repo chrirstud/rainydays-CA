@@ -4,7 +4,7 @@
 
 A webshop where you can buy jackets for all kinds of weather and conditions.
 
-- [Live demo on Netlify](www.linkedin.com)
+- [Live demo on Netlify](https://boring-edison-e256e4.netlify.app/)
 
 ## Description
 
@@ -43,7 +43,7 @@ Upload to webserver
 
 ## Contact
 
-[LinkedIn](www.linkedin.com)
+[LinkedIn](https://www.linkedin.com/in/christer-olsen-b557ab1b4/)
 
 ## License
 
