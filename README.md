@@ -1,5 +1,6 @@
 # Rainydays
 - cross-course project repo
+
 ![image](/images/rainydays_homepage.jpg)
 
 A webshop where you can buy jackets for all kinds of weather and conditions.
