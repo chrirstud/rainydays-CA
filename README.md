@@ -1,5 +1,4 @@
-# Rainydays
-- cross-course project repo
+# Rainydays - cross-course project
 
 ![image](/images/rainydays_homepage.jpg)
 
